@@ -289,22 +289,32 @@
 
     <script>
         const detailedNodes = {
-            root: { title: 'Subdirección Desarrollo Organizacional', color: 'bg-[#78A49B] text-[#1a2e2a]', desc: 'Dirección estratégica para asegurar que la cultura, la tecnología y el talento converjan en alta productividad interna.', vision: 'Puente crítico entre la visión ejecutiva y la ejecución operativa.', challenge: 'Superar el vacío de decisión entre los equipos que gestan ideas y la dirección que las aprueba.' },
-            cultura_bienestar: { title: 'Cultura, bienestar y experiencia del empleado', color: 'bg-[#78A49B] text-[#1a2e2a]', desc: 'Foco en la salud mental, el clima laboral y la satisfacción integral del colaborador.', vision: 'Bienestar como indicador de productividad.', challenge: 'Romper silos organizacionales y personalizar el ciclo de vida del colaborador.' },
-            equipo_psicosocial: { title: 'Equipo psicosocial', color: 'bg-[#F5C2C2] text-[#4a2a2a]', desc: 'Apoyo integral al colaborador y su familia para facilitar la Gestión del Cambio institucional.', vision: 'Resiliencia humana ante el cambio.', challenge: 'Garantizar el acompañamiento psicosocial efectivo en cada hito de transformación.' },
-            seleccion_personal: { title: 'Selección de personal', color: 'bg-[#78A49B] text-[#1a2e2a]', desc: 'Captación de talento alineado a metodologías ágiles y cultura neuronal de cambio.', vision: 'Identificar el ADN cultural de adaptabilidad.', challenge: 'Evolucionar los criterios de selección hacia perfiles con mentalidad de aprendizaje digital.' },
-            empleo_talento_nuevo: { title: 'Empleo y Gestión del Talento', color: 'bg-[#FEFE96] text-[#4a4a1a]', desc: 'Gestión y colocación de talento alineado a las necesidades del mercado moderno.', vision: 'Socio de relacionamiento estratégico externo.', challenge: 'Convertir a la Caja en un aliado metodológico para la gestión del talento externo y referente de empleabilidad.' },
-            desarrollo_formacion: { title: 'Desarrollo y formación', color: 'bg-[#78A49B] text-[#1a2e2a]', desc: 'Fortalecimiento de la cultura, planes de carrera y formación continua del talento institucional.', vision: 'Desarrollo de capacidades de alto impacto.', challenge: 'Cerrar brechas de competencias críticas mediante un aprendizaje continuo y escalable.' },
-            transformacion_digital_nuevo: { title: 'Transformación digital', color: 'bg-[#FEFE96] text-[#4a4a1a]', desc: 'Implementación del Modelo TED para automatizar tareas repetitivas y liberar el potencial del equipo.', vision: 'Fusión de productividad con tecnología avanzada.', challenge: 'Minimizar tareas mecánicas para elevar el rol del talento hacia el análisis estratégico.' },
-            vector_cultura: { title: 'Vectores de la transformación', color: 'bg-[#F5C2C2] text-[#4a2a2a]', desc: 'Ejes fundamentales de la evolución organizacional: Cultura (Mentalidad), Negocio Digital (Estrategia) y Tecnología (Herramientas).', vision: 'Cultura neuronal ágil impulsada por la integración digital.', challenge: 'Alinear los tres vectores para asegurar una adopción tecnológica con propósito y alto impacto.' },
-            gestion_competencias: { title: 'Gestión de competencias, evaluación y efectividad organizacional', color: 'bg-[#78A49B] text-[#1a2e2a]', desc: 'Mapeo de habilidades y Evaluaciones 360 con impacto directo en el desempeño dinámico.', vision: 'Estructura dinámica basada en méritos.', challenge: 'Mantener manuales de funciones alineados a las exigencias de la competitividad moderna.' },
-            historias_laborales: { title: 'Historias Laborales', color: 'bg-[#F5C2C2] text-[#4a2a2a]', desc: 'Trazabilidad digital completa del ciclo de vida del colaborador en la organización.', vision: 'Trazabilidad 100% digital centralizada.', challenge: 'Lograr la digitalización total de expedientes para habilitar el análisis de datos de personas.' },
-            nomina_seguridad: { title: 'Nómina y seguridad social', color: 'bg-[#78A49B] text-[#1a2e2a]', desc: 'Garantía del flujo transaccional, pagos precisos y soporte operacional en Gestión Humana.', vision: 'Excelencia operativa y eficiencia prestacional.', challenge: 'Automatización total de flujos de pago para integrarlos al modelo de productividad.' },
-            relaciones_laborales: { title: 'Relaciones laborales', color: 'bg-[#78A49B] text-[#1a2e2a]', desc: 'Gestión de acuerdos, seguridad jurídica y diálogo constructivo basado en la cultura neuronal.', vision: 'Paz laboral y equilibrio normativo.', challenge: 'Modernizar los acuerdos laborales para soportar modalidades de trabajo híbridas y flexibles.' },
-            control_disciplinario: { title: 'Control Disciplinario', color: 'bg-[#F5C2C2] text-[#4a2a2a]', desc: 'Garantía del cumplimiento de normas y ética empresarial.', vision: 'Transparencia y conducta preventiva institucional.', challenge: 'Migrar de un control fiscalizador a uno preventivo basado en la pedagogía cultural.' },
-            negociaciones_col_nuevo: { title: 'Negociaciones Colectivas', color: 'bg-[#F5C2C2] text-[#4a2a2a]', desc: 'Diálogo con asociaciones de empleados para la mejora del clima y acuerdos mutuos.', vision: 'Paz laboral sostenible.', challenge: 'Alinear los intereses de los colaboradores con la sostenibilidad estratégica institucional.' },
-            productividad: { title: 'Productividad', color: 'bg-[#78A49B] text-[#1a2e2a]', desc: 'Apoyo metodológico transversal a proyectos PMO para asegurar eficiencia operativa sistémica.', vision: 'Eficiencia operativa medible.', challenge: 'Convertir la productividad en una métrica objetiva basada en datos y automatización.' },
-            gestion_innovacion: { title: 'Gestión de la Innovación', color: 'bg-[#FEFE96] text-[#4a4a1a]', desc: 'Fomento de la creatividad y prototipado de soluciones disruptivas para la Caja.', vision: 'Cultura de innovación abierta y colaborativa.', challenge: 'Materializar ideas en proyectos escalables que generen valor real al afiliado.' }
+            root: { title: 'Subdirección Desarrollo Organizacional', color: 'bg-[#3b685c] text-white', desc: 'Dirección estratégica para asegurar que la cultura, la tecnología y el talento converjan en alta productividad interna.', vision: 'Puente crítico entre la visión ejecutiva y la ejecución operativa.', challenge: 'Superar el vacío de decisión.' },
+            empleo: { title: 'Empleo y Gestión del Talento', color: 'bg-[#78A49B] text-[#1a2e2a]', desc: 'Gestión y colocación de talento alineado a las necesidades del mercado.', vision: 'Socio estratégico externo.', challenge: 'Referente de empleabilidad.' },
+            aceleracion: { title: 'Unidad de Aceleración Empresarial', color: 'bg-[#fcfc9c] text-[#5e5e00]', desc: 'Impulso a nuevas iniciativas empresariales.', vision: 'Crecimiento sostenido.', challenge: 'Acelerar modelos de negocio.' },
+            gestion_humana: { title: 'Gestión Humana', color: 'bg-[#78A49B] text-[#1a2e2a]', desc: 'Gestión integral del ciclo de vida del colaborador.', vision: 'Talento motivado y productivo.', challenge: 'Maximizar el potencial humano.' },
+            productividad: { title: 'Productividad', color: 'bg-[#78A49B] text-[#1a2e2a]', desc: 'Asegurar eficiencia operativa sistémica.', vision: 'Eficiencia operativa medible.', challenge: 'Mejora continua.' },
+            metodologia: { title: 'Métodología de negocio', color: 'bg-[#b3d4ff] text-[#1a2e4a]', desc: 'Estandarización de metodologías ágiles y procesos.', vision: 'Procesos fluidos.', challenge: 'Adopción metodológica.' },
+            transformacion: { title: 'Transformación digital', color: 'bg-[#78A49B] text-[#1a2e2a]', desc: 'Implementación del Modelo TED para automatizar tareas.', vision: 'Organización digital.', challenge: 'Minimizar tareas mecánicas.' },
+            innovacion: { title: 'Innovación', color: 'bg-[#78A49B] text-[#1a2e2a]', desc: 'Fomento de la creatividad y prototipado de soluciones.', vision: 'Cultura colaborativa.', challenge: 'Ideas escalables.' },
+            integracion: { title: 'INTEGRACIÓN', color: 'bg-[#d4edda] text-[#155724]', desc: 'Punto de convergencia de los servicios de gestión humana.', vision: 'Sinergia total.', challenge: 'Evitar silos de trabajo.' },
+            gestor_ex: { title: 'Gestor Ex.', color: 'bg-[#b3d4ff] text-[#1a2e4a]', desc: 'Diseño de la Experiencia del Empleado.', vision: 'Fidelización de talento.', challenge: 'Satisfacción 360.' },
+            vector_tech: { title: 'Vector tecnología', color: 'bg-[#b3d4ff] text-[#1a2e4a]', desc: 'Herramientas tecnológicas para gestión humana.', vision: 'Eficiencia digital.', challenge: 'Adopción de HR Tech.' },
+            relaciones: { title: 'Relaciones Laborales y cumplimiento normativo', color: 'bg-[#b3d4ff] text-[#1a2e4a]', desc: 'Gestión de acuerdos y seguridad jurídica.', vision: 'Paz laboral.', challenge: 'Cumplimiento normativo 100%.' },
+            desarrollo_exp: { title: 'Desarrollo y experiencia', color: 'bg-[#3b685c] text-white', desc: 'Desarrollo continuo y ciclo de vida integral del talento.', vision: 'Crecimiento profesional.', challenge: 'Cerrar brechas de competencias.' },
+            seleccion: { title: 'Selección', color: 'bg-[#b3d4ff] text-[#1a2e4a]', desc: 'Captación de talento alineado a la cultura.', vision: 'Atraer el mejor talento.', challenge: 'Tiempo de cobertura.' },
+            formacion: { title: 'Formación', color: 'bg-[#b3d4ff] text-[#1a2e4a]', desc: 'Capacitación y planes de carrera.', vision: 'Aprendizaje continuo.', challenge: 'Upskilling efectivo.' },
+            competencias: { title: 'Gestión de competencias', color: 'bg-[#b3d4ff] text-[#1a2e4a]', desc: 'Mapeo de habilidades y evaluación.', vision: 'Estructura por méritos.', challenge: 'Evaluación objetiva.' },
+            bienestar: { title: 'Bienestar', color: 'bg-[#b3d4ff] text-[#1a2e4a]', desc: 'Foco en la salud mental y clima laboral.', vision: 'Equilibrio vida-trabajo.', challenge: 'Reducir burnout.' },
+            trabajo_social: { title: 'Trabajo Social', color: 'bg-[#b3d4ff] text-[#1a2e4a]', desc: 'Apoyo integral al colaborador y su familia.', vision: 'Soporte familiar.', challenge: 'Impacto social.' },
+            vector_cultura: { title: 'Vector Cultura', color: 'bg-[#b3d4ff] text-[#1a2e4a]', desc: 'Ejes fundamentales de evolución de mentalidad.', vision: 'Cultura ágil.', challenge: 'Apropiación cultural.' },
+            operacion_admin: { title: 'Operación y Administración', color: 'bg-[#3b685c] text-white', desc: 'Soporte operacional y garantía de transacciones.', vision: 'Excelencia operativa.', challenge: 'Cero errores transaccionales.' },
+            nomina: { title: 'Nómina', color: 'bg-[#b3d4ff] text-[#1a2e4a]', desc: 'Pagos precisos y oportunos.', vision: 'Precisión financiera.', challenge: 'Automatización de nómina.' },
+            seguridad_social: { title: 'Seguridad Social', color: 'bg-[#b3d4ff] text-[#1a2e4a]', desc: 'Afiliaciones y aportes al sistema de seguridad social.', vision: 'Cumplimiento legal.', challenge: 'Trazabilidad de aportes.' },
+            contratacion: { title: 'Contratación', color: 'bg-[#b3d4ff] text-[#1a2e4a]', desc: 'Formalización del vínculo laboral.', vision: 'Integración rápida.', challenge: 'Agilidad contractual.' },
+            historias: { title: 'Historias Laborales', color: 'bg-[#b3d4ff] text-[#1a2e4a]', desc: 'Trazabilidad digital del colaborador.', vision: 'Expedientes 100% digitales.', challenge: 'Cero papel.' },
+            control_ad: { title: 'Control Ad. Laboral', color: 'bg-[#b3d4ff] text-[#1a2e4a]', desc: 'Control de novedades, turnos y asistencias.', vision: 'Control transparente.', challenge: 'Integración de biometría.' },
+            compensacion: { title: 'Compensación y Beneficios', color: 'bg-[#b3d4ff] text-[#1a2e4a]', desc: 'Estructura salarial y compensación variable.', vision: 'Equidad interna.', challenge: 'Atractividad retributiva.' }
         };
 
         const slides = [
@@ -457,129 +467,181 @@
 
         function buildMapTemplate(isDark, isMaximized = false) {
             const groupBg = isDark ? 'bg-indigo-950/20 border-white/5' : 'bg-slate-50/40 border-slate-100';
+            const lineColor = isDark ? 'border-slate-500/50 bg-slate-500/50' : 'border-slate-400 bg-slate-400';
+            const lineClass = 'bg-slate-400 dark:bg-slate-500/50';
+            const borderClass = 'border-slate-400 dark:border-slate-500/50';
             
             return `
-                <div class="rounded-[3rem] p-10 border shadow-2xl transition-all duration-1000 ${isDark ? 'bg-slate-900/60 border-white/10' : 'bg-white/95 border-slate-200'} relative flex flex-col items-center min-h-[fit-content] pt-20">
+                <div class="rounded-[3rem] p-8 border shadow-2xl transition-all duration-1000 ${isDark ? 'bg-slate-900/60 border-white/10' : 'bg-white/95 border-slate-200'} relative flex flex-col items-center overflow-x-auto w-full pt-16 h-full max-h-[85vh] overflow-y-auto">
                     
                     ${!isMaximized ? `
-                    <button onclick="openMaximize()" class="absolute top-8 right-8 p-3 rounded-2xl bg-white/10 hover:bg-white/20 transition-all border border-white/10 z-[60] shadow-lg">
+                    <button onclick="openMaximize()" class="absolute top-6 right-6 p-3 rounded-2xl bg-white/10 hover:bg-white/20 transition-all border border-white/10 z-[60] shadow-lg">
                         <i data-lucide="maximize-2" class="w-5 h-5 ${isDark ? 'text-amber-400' : 'text-slate-500'}"></i>
                     </button>
                     ` : ''}
                     
-                    <div class="min-w-[1200px] flex flex-col items-center py-4 relative">
+                    <div class="min-w-max flex flex-col items-center py-8 relative px-4 md:px-12 w-full mt-4">
                         
-                        <!-- ROOT: Subdirección Desarrollo Organizacional -->
-                        <div class="relative z-20 mb-2">
+                        <!-- Nivel 0 (Raíz) -->
+                        <div class="relative z-20 flex flex-col items-center mt-2">
                             ${buildNode('root', 'large')}
+                            <!-- Inicio de Espina Central -->
+                            <div class="w-[2px] h-[40px] ${lineClass} mt-0 relative z-10"></div>
                         </div>
-
-                        <!-- CENTRAL SPINE -->
-                        <div class="w-0.5 h-[420px] bg-slate-400 absolute top-20 left-1/2 -translate-x-1/2 opacity-30 z-10"></div>
-
-                        <div class="relative w-full flex">
+                        
+                        <!-- Contenedor Principal Izquierda/Derecha -->
+                        <div class="flex w-full justify-center relative">
                             
                             <!-- LADO IZQUIERDO -->
-                            <div class="w-1/2 flex flex-col items-end pr-0 relative pt-4 gap-8">
-                                
-                                <!-- Cultura y Equipo -->
-                                <div class="flex items-center gap-4 relative">
-                                    <div class="absolute right-0 top-1/2 w-48 h-0.5 bg-slate-400 opacity-20 -mr-48"></div>
-                                    ${buildNode('equipo_psicosocial', 'small')}
-                                    <div class="w-6 h-px bg-slate-300"></div>
-                                    <i data-lucide="arrow-left" class="w-4 h-4 text-slate-300 -mx-2"></i>
-                                    ${buildNode('cultura_bienestar', 'medium')}
-                                </div>
-
-                                <!-- Selección y Empleo -->
-                                <div class="flex items-center gap-4 relative">
-                                    <div class="absolute right-0 top-1/2 w-48 h-0.5 bg-slate-400 opacity-20 -mr-48"></div>
-                                    ${buildNode('empleo_talento_nuevo', 'small')}
-                                    <div class="w-6 h-px border-t border-dashed border-slate-400"></div>
-                                    <i data-lucide="arrow-left" class="w-4 h-4 text-slate-300 -mx-2"></i>
-                                    ${buildNode('seleccion_personal', 'medium')}
-                                </div>
-
-                                <!-- Desarrollo y formación -->
-                                <div class="flex items-center gap-4 relative">
-                                    <div class="absolute right-0 top-1/2 w-48 h-0.5 bg-slate-400 opacity-20 -mr-48"></div>
-                                    ${buildNode('desarrollo_formacion', 'medium')}
-                                </div>
-
-                                <!-- Transformación y Vectores -->
-                                <div class="flex items-center gap-4 relative">
-                                    <div class="absolute right-0 top-1/2 w-48 h-0.5 bg-slate-400 opacity-20 -mr-48"></div>
-                                    ${buildNode('vector_cultura', 'small')}
-                                    <div class="w-6 h-px border-t border-dashed border-slate-400"></div>
-                                    <i data-lucide="arrow-left" class="w-4 h-4 text-slate-300 -mx-2"></i>
-                                    ${buildNode('transformacion_digital_nuevo', 'medium')}
-                                </div>
-
-                                <!-- Gestión de la Innovación -->
-                                <div class="flex items-center gap-4 relative">
-                                    <div class="absolute right-0 top-1/2 w-48 h-0.5 bg-slate-400 opacity-20 -mr-48"></div>
-                                    ${buildNode('gestion_innovacion', 'medium')}
+                            <div class="w-1/2 flex justify-end pr-[40px] relative items-start">
+                                <div class="flex items-center gap-6 relative mt-[10px]">
+                                    <div class="absolute -right-[40px] top-1/2 w-[40px] h-[2px] ${lineClass}"></div>
+                                    <!-- Dotted line to Aceleración -->
+                                    <div class="flex items-center gap-4 relative">
+                                        ${buildNode('aceleracion', 'medium')}
+                                        <div class="w-[30px] h-[2px] border-t-[2px] border-dashed ${borderClass}"></div>
+                                    </div>
+                                    ${buildNode('empleo', 'medium')}
                                 </div>
                             </div>
 
                             <!-- LADO DERECHO -->
-                            <div class="w-1/2 flex flex-col items-start pl-0 relative pt-4 gap-8">
-                                
-                                <!-- Gestión Competencias e Historias -->
-                                <div class="flex items-center gap-4 relative">
-                                    <div class="absolute left-0 top-1/2 w-48 h-0.5 bg-slate-400 opacity-20 -ml-48"></div>
-                                    ${buildNode('gestion_competencias', 'medium')}
-                                    <i data-lucide="arrow-right" class="w-4 h-4 text-slate-300 -mx-2"></i>
-                                    <div class="w-6 h-px bg-slate-300"></div>
-                                    ${buildNode('historias_laborales', 'small')}
-                                </div>
+                            <div class="w-1/2 flex justify-start pl-[40px] relative items-start">
+                                <!-- Contenedor de dos columnas para el lado derecho -->
+                                <div class="flex gap-16 relative w-full">
+                                    
+                                    <!-- Columna Derecha 1: Nodos Principales -->
+                                    <div class="flex flex-col gap-8 relative mt-[10px] self-start">
+                                        <!-- Espina Central (Limitada a esta columna) -->
+                                        <div class="absolute -left-[40px] top-[-50px] bottom-[28px] w-[2px] ${lineClass} -z-10"></div>
 
-                                <!-- Nómina -->
-                                <div class="flex items-center gap-4 relative">
-                                    <div class="absolute left-0 top-1/2 w-48 h-0.5 bg-slate-400 opacity-20 -ml-48"></div>
-                                    ${buildNode('nomina_seguridad', 'medium')}
-                                </div>
+                                        <!-- Gestión Humana -->
+                                        <div class="relative flex items-center z-20">
+                                            <div class="absolute -left-[40px] top-1/2 w-[40px] h-[2px] ${lineClass} -z-10"></div>
+                                            ${buildNode('gestion_humana', 'medium')}
+                                        </div>
 
-                                <!-- Relaciones Laborales -->
-                                <div class="flex items-center gap-4 relative">
-                                    <div class="absolute left-0 top-1/2 w-48 h-0.5 bg-slate-400 opacity-20 -ml-48"></div>
-                                    ${buildNode('relaciones_laborales', 'medium')}
-                                    <div class="w-10 h-px bg-slate-300"></div>
-                                    <i data-lucide="arrow-right" class="w-4 h-4 text-slate-300 -mx-2"></i>
-                                    <div class="flex flex-col gap-3 pl-6 border-l-2 border-slate-200 relative">
-                                        <div class="absolute -left-[2px] top-1/4 w-4 h-px bg-slate-200"></div>
-                                        <div class="absolute -left-[2px] top-3/4 w-4 h-px bg-slate-200"></div>
-                                        ${buildNode('control_disciplinario', 'small')}
-                                        ${buildNode('negociaciones_col_nuevo', 'small')}
+                                        <!-- Productividad y Metodología -->
+                                        <div class="relative flex flex-col items-start z-20">
+                                            <div class="relative flex items-center w-full">
+                                                <div class="absolute -left-[40px] top-1/2 w-[40px] h-[2px] ${lineClass} -z-10"></div>
+                                                ${buildNode('productividad', 'medium')}
+                                            </div>
+                                            <div class="flex items-center relative pl-12 pt-4">
+                                                <!-- L Connector -->
+                                                <div class="absolute left-6 top-[-4px] w-6 h-[43px] border-l-[2px] border-b-[2px] ${borderClass} rounded-bl-lg"></div>
+                                                <i data-lucide="arrow-right" class="w-4 h-4 text-slate-400 absolute left-[38px] top-[31.5px] z-10"></i>
+                                                ${buildNode('metodologia', 'small')}
+                                            </div>
+                                        </div>
+
+                                        <!-- Transformación -->
+                                        <div class="relative flex items-center z-20">
+                                            <div class="absolute -left-[40px] top-1/2 w-[40px] h-[2px] ${lineClass} -z-10"></div>
+                                            ${buildNode('transformacion', 'medium')}
+                                        </div>
+
+                                        <!-- Innovación -->
+                                        <div class="relative flex items-center z-20">
+                                            <div class="absolute -left-[40px] top-1/2 w-[40px] h-[2px] ${lineClass} -z-10"></div>
+                                            ${buildNode('innovacion', 'medium')}
+                                        </div>
+                                    </div>
+
+                                    <!-- Columna Derecha 2: Integración y Sub-ramas -->
+                                    <div class="flex flex-col relative mt-[10px] z-20">
+                                        
+                                        <!-- Integración -->
+                                        <div class="relative z-20 flex items-center">
+                                            <div class="absolute -left-[64px] top-1/2 w-[64px] h-[2px] ${lineClass} -z-10"></div>
+                                            <i data-lucide="arrow-right" class="w-4 h-4 text-slate-400 absolute -left-[6px] top-[18px] z-10"></i>
+                                            ${buildNode('integracion', 'medium')}
+                                        </div>
+                                        
+                                        <!-- Hijos de Integración -->
+                                        <div class="flex flex-col gap-4 relative border-l-[2px] ${borderClass} pl-8 ml-6 mt-2 pb-4">
+                                            
+                                            <div class="relative flex items-center">
+                                                <div class="absolute -left-8 top-1/2 w-8 h-[2px] ${lineClass} -z-10"></div>
+                                                <i data-lucide="arrow-right" class="w-3 h-3 text-slate-400 absolute -left-[4px] top-[13px] z-10"></i>
+                                                ${buildNode('gestor_ex', 'small')}
+                                            </div>
+                                            <div class="relative flex items-center">
+                                                <div class="absolute -left-8 top-1/2 w-8 h-[2px] ${lineClass} -z-10"></div>
+                                                <i data-lucide="arrow-right" class="w-3 h-3 text-slate-400 absolute -left-[4px] top-[13px] z-10"></i>
+                                                ${buildNode('vector_tech', 'small')}
+                                            </div>
+                                            <div class="relative flex items-center">
+                                                <div class="absolute -left-8 top-1/2 w-8 h-[2px] ${lineClass} -z-10"></div>
+                                                <i data-lucide="arrow-right" class="w-3 h-3 text-slate-400 absolute -left-[4px] top-[13px] z-10"></i>
+                                                ${buildNode('relaciones', 'small')}
+                                            </div>
+                                            
+                                            <!-- Desarrollo y experiencia -->
+                                            <div class="relative flex flex-col items-start gap-2 mt-2">
+                                                <div class="absolute -left-8 top-[26px] w-8 h-[2px] ${lineClass} -z-10"></div>
+                                                <i data-lucide="arrow-right" class="w-4 h-4 text-slate-400 absolute -left-[6px] top-[18px] z-10"></i>
+                                                <div class="z-20 relative">
+                                                    ${buildNode('desarrollo_exp', 'medium')}
+                                                </div>
+                                                <div class="flex flex-col gap-2 relative border-l-[2px] ${borderClass} pl-6 ml-6 py-1 mt-1">
+                                                    ${['seleccion', 'formacion', 'competencias', 'bienestar', 'trabajo_social', 'vector_cultura'].map(id => `
+                                                    <div class="relative flex items-center">
+                                                        <div class="absolute -left-6 top-1/2 w-6 h-[2px] ${lineClass} -z-10"></div>
+                                                        <i data-lucide="arrow-right" class="w-3 h-3 text-slate-400 absolute -left-[2px] top-[13px] z-10"></i>
+                                                        ${buildNode(id, 'small')}
+                                                    </div>
+                                                    `).join('')}
+                                                </div>
+                                            </div>
+                                            
+                                            <!-- Operación y Administración -->
+                                            <div class="relative flex flex-col items-start gap-2 mt-2">
+                                                <div class="absolute -left-8 top-[26px] w-8 h-[2px] ${lineClass} -z-10"></div>
+                                                <i data-lucide="arrow-right" class="w-4 h-4 text-slate-400 absolute -left-[6px] top-[18px] z-10"></i>
+                                                <div class="z-20 relative">
+                                                    ${buildNode('operacion_admin', 'medium')}
+                                                </div>
+                                                <div class="flex flex-col gap-2 relative border-l-[2px] ${borderClass} pl-6 ml-6 py-1 mt-1">
+                                                    ${['nomina', 'seguridad_social', 'contratacion', 'historias', 'control_ad', 'compensacion'].map(id => `
+                                                    <div class="relative flex items-center">
+                                                        <div class="absolute -left-6 top-1/2 w-6 h-[2px] ${lineClass} -z-10"></div>
+                                                        <i data-lucide="arrow-right" class="w-3 h-3 text-slate-400 absolute -left-[2px] top-[13px] z-10"></i>
+                                                        ${buildNode(id, 'small')}
+                                                    </div>
+                                                    `).join('')}
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-
-                                <!-- Productividad -->
-                                <div class="flex items-center gap-4 relative">
-                                    <div class="absolute left-0 top-1/2 w-48 h-0.5 bg-slate-400 opacity-20 -ml-48"></div>
-                                    ${buildNode('productividad', 'medium')}
-                                </div>
                             </div>
-
                         </div>
 
                         <!-- Color Legend -->
-                        <div class="mt-8 flex flex-wrap justify-center gap-6 p-6 rounded-3xl bg-slate-50/50 dark:bg-white/5 border border-slate-200/50 dark:border-white/10">
+                        <div class="mt-8 flex flex-wrap justify-center gap-6 p-6 rounded-3xl bg-slate-50/50 dark:bg-white/5 border border-slate-200/50 dark:border-white/10 w-full max-w-4xl self-center z-20 relative">
+                            <div class="flex items-center gap-2">
+                                <div class="w-4 h-4 rounded-full bg-[#3b685c]"></div>
+                                <span class="text-[10px] font-black uppercase tracking-widest ${isDark ? 'text-slate-300' : 'text-slate-600'}">Dirección y Gestión Core</span>
+                            </div>
                             <div class="flex items-center gap-2">
                                 <div class="w-4 h-4 rounded-full bg-[#78A49B]"></div>
-                                <span class="text-[10px] font-black uppercase tracking-widest ${isDark ? 'text-slate-300' : 'text-slate-600'}">Procesos Misionales</span>
+                                <span class="text-[10px] font-black uppercase tracking-widest ${isDark ? 'text-slate-300' : 'text-slate-600'}">Ramas Principales</span>
                             </div>
                             <div class="flex items-center gap-2">
-                                <div class="w-4 h-4 rounded-full bg-[#F5C2C2]"></div>
-                                <span class="text-[10px] font-black uppercase tracking-widest ${isDark ? 'text-slate-300' : 'text-slate-600'}">Apoyo y Cultura</span>
+                                <div class="w-4 h-4 rounded-full bg-[#d4edda]"></div>
+                                <span class="text-[10px] font-black uppercase tracking-widest ${isDark ? 'text-slate-300' : 'text-slate-600'}">Integración</span>
                             </div>
                             <div class="flex items-center gap-2">
-                                <div class="w-4 h-4 rounded-full bg-[#FEFE96]"></div>
-                                <span class="text-[10px] font-black uppercase tracking-widest ${isDark ? 'text-slate-300' : 'text-slate-600'}">Aliados de Transformación</span>
+                                <div class="w-4 h-4 rounded-full bg-[#fcfc9c]"></div>
+                                <span class="text-[10px] font-black uppercase tracking-widest ${isDark ? 'text-slate-300' : 'text-slate-600'}">Aceleración Empresarial</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <div class="w-4 h-4 rounded-full bg-[#b3d4ff]"></div>
+                                <span class="text-[10px] font-black uppercase tracking-widest ${isDark ? 'text-slate-300' : 'text-slate-600'}">Especialización Operativa</span>
                             </div>
                         </div>
                     </div>
-
                 </div>`;
         }
 
@@ -588,20 +650,20 @@
             if (!node) return '';
             const isRoot = id === 'root';
             
-            let classes = "flex items-center justify-center text-center font-black uppercase transition-all duration-500 cursor-pointer node-3d ";
+            let classes = "flex items-center justify-center text-center font-black transition-all duration-500 cursor-pointer node-3d shadow-md ";
             
             if (size === 'mini') {
-                classes += "w-[130px] h-[34px] text-[7.5px] rounded-lg px-2 leading-[0.85] ";
+                classes += "w-[130px] h-[34px] text-[8px] rounded-lg px-2 leading-tight ";
             } else if (size === 'small') {
-                classes += "w-[160px] h-[45px] text-[9px] rounded-xl px-4 leading-[0.9] ";
+                classes += "w-[170px] h-[38px] text-[10px] rounded-lg px-3 leading-tight ";
             } else if (size === 'medium') {
-                classes += "w-[190px] h-[55px] text-[10.5px] rounded-[1.25rem] px-6 leading-[1] ";
+                classes += "w-[210px] h-[52px] text-[11px] rounded-xl px-4 leading-tight uppercase ";
             } else if (size === 'large') {
-                classes += "w-[340px] h-[80px] text-[12px] rounded-[1.5rem] px-8 py-4 ";
+                classes += "w-[260px] h-[64px] text-[14px] rounded-2xl px-6 py-2 uppercase ";
             }
 
-            return `<div onclick="openModal(event, '${id}')" class="${classes} border border-black/5 ${integrationMode && node.isPulse ? 'node-pulse border-amber-400' : ''} ${node.color}">
-                <span class="break-words max-w-full">${node.title}</span>
+            return `<div onclick="openModal(event, '${id}')" class="${classes} border border-black/5 ${integrationMode && node.isPulse ? 'node-pulse border-amber-400' : ''} ${node.color} hover:scale-105 active:scale-95 z-20 relative bg-opacity-90 backdrop-blur-sm">
+                <span class="break-words max-w-full drop-shadow-sm">${node.title}</span>
             </div>`;
         }
 
