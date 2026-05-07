@@ -289,32 +289,51 @@
 
     <script>
         const detailedNodes = {
-            root: { title: 'Subdirección Desarrollo Organizacional', color: 'bg-[#3b685c] text-white', desc: 'Dirección estratégica para asegurar que la cultura, la tecnología y el talento converjan en alta productividad interna.', vision: 'Puente crítico entre la visión ejecutiva y la ejecución operativa.', challenge: 'Superar el vacío de decisión.' },
-            empleo: { title: 'Empleo y Gestión del Talento', color: 'bg-[#78A49B] text-[#1a2e2a]', desc: 'Gestión y colocación de talento alineado a las necesidades del mercado.', vision: 'Socio estratégico externo.', challenge: 'Referente de empleabilidad.' },
-            aceleracion: { title: 'Unidad de Aceleración Empresarial', color: 'bg-[#fcfc9c] text-[#5e5e00]', desc: 'Impulso a nuevas iniciativas empresariales.', vision: 'Crecimiento sostenido.', challenge: 'Acelerar modelos de negocio.' },
-            gestion_humana: { title: 'Gestión Humana', color: 'bg-[#78A49B] text-[#1a2e2a]', desc: 'Gestión integral del ciclo de vida del colaborador.', vision: 'Talento motivado y productivo.', challenge: 'Maximizar el potencial humano.' },
-            productividad: { title: 'Productividad', color: 'bg-[#78A49B] text-[#1a2e2a]', desc: 'Asegurar eficiencia operativa sistémica.', vision: 'Eficiencia operativa medible.', challenge: 'Mejora continua.' },
-            metodologia: { title: 'Métodología de negocio', color: 'bg-[#b3d4ff] text-[#1a2e4a]', desc: 'Estandarización de metodologías ágiles y procesos.', vision: 'Procesos fluidos.', challenge: 'Adopción metodológica.' },
-            transformacion: { title: 'Transformación digital', color: 'bg-[#78A49B] text-[#1a2e2a]', desc: 'Implementación del Modelo TED para automatizar tareas.', vision: 'Organización digital.', challenge: 'Minimizar tareas mecánicas.' },
-            innovacion: { title: 'Innovación', color: 'bg-[#78A49B] text-[#1a2e2a]', desc: 'Fomento de la creatividad y prototipado de soluciones.', vision: 'Cultura colaborativa.', challenge: 'Ideas escalables.' },
-            integracion: { title: 'INTEGRACIÓN', color: 'bg-[#d4edda] text-[#155724]', desc: 'Punto de convergencia de los servicios de gestión humana.', vision: 'Sinergia total.', challenge: 'Evitar silos de trabajo.' },
-            gestor_ex: { title: 'Gestor Ex.', color: 'bg-[#b3d4ff] text-[#1a2e4a]', desc: 'Diseño de la Experiencia del Empleado.', vision: 'Fidelización de talento.', challenge: 'Satisfacción 360.' },
-            vector_tech: { title: 'Vector tecnología', color: 'bg-[#b3d4ff] text-[#1a2e4a]', desc: 'Herramientas tecnológicas para gestión humana.', vision: 'Eficiencia digital.', challenge: 'Adopción de HR Tech.' },
-            relaciones: { title: 'Relaciones Laborales y cumplimiento normativo', color: 'bg-[#b3d4ff] text-[#1a2e4a]', desc: 'Gestión de acuerdos y seguridad jurídica.', vision: 'Paz laboral.', challenge: 'Cumplimiento normativo 100%.' },
-            desarrollo_exp: { title: 'Desarrollo y experiencia', color: 'bg-[#3b685c] text-white', desc: 'Desarrollo continuo y ciclo de vida integral del talento.', vision: 'Crecimiento profesional.', challenge: 'Cerrar brechas de competencias.' },
-            seleccion: { title: 'Selección', color: 'bg-[#b3d4ff] text-[#1a2e4a]', desc: 'Captación de talento alineado a la cultura.', vision: 'Atraer el mejor talento.', challenge: 'Tiempo de cobertura.' },
-            formacion: { title: 'Formación', color: 'bg-[#b3d4ff] text-[#1a2e4a]', desc: 'Capacitación y planes de carrera.', vision: 'Aprendizaje continuo.', challenge: 'Upskilling efectivo.' },
-            competencias: { title: 'Gestión de competencias', color: 'bg-[#b3d4ff] text-[#1a2e4a]', desc: 'Mapeo de habilidades y evaluación.', vision: 'Estructura por méritos.', challenge: 'Evaluación objetiva.' },
-            bienestar: { title: 'Bienestar', color: 'bg-[#b3d4ff] text-[#1a2e4a]', desc: 'Foco en la salud mental y clima laboral.', vision: 'Equilibrio vida-trabajo.', challenge: 'Reducir burnout.' },
-            trabajo_social: { title: 'Trabajo Social', color: 'bg-[#b3d4ff] text-[#1a2e4a]', desc: 'Apoyo integral al colaborador y su familia.', vision: 'Soporte familiar.', challenge: 'Impacto social.' },
-            vector_cultura: { title: 'Vector Cultura', color: 'bg-[#b3d4ff] text-[#1a2e4a]', desc: 'Ejes fundamentales de evolución de mentalidad.', vision: 'Cultura ágil.', challenge: 'Apropiación cultural.' },
-            operacion_admin: { title: 'Operación y Administración', color: 'bg-[#3b685c] text-white', desc: 'Soporte operacional y garantía de transacciones.', vision: 'Excelencia operativa.', challenge: 'Cero errores transaccionales.' },
-            nomina: { title: 'Nómina', color: 'bg-[#b3d4ff] text-[#1a2e4a]', desc: 'Pagos precisos y oportunos.', vision: 'Precisión financiera.', challenge: 'Automatización de nómina.' },
-            seguridad_social: { title: 'Seguridad Social', color: 'bg-[#b3d4ff] text-[#1a2e4a]', desc: 'Afiliaciones y aportes al sistema de seguridad social.', vision: 'Cumplimiento legal.', challenge: 'Trazabilidad de aportes.' },
-            contratacion: { title: 'Contratación', color: 'bg-[#b3d4ff] text-[#1a2e4a]', desc: 'Formalización del vínculo laboral.', vision: 'Integración rápida.', challenge: 'Agilidad contractual.' },
-            historias: { title: 'Historias Laborales', color: 'bg-[#b3d4ff] text-[#1a2e4a]', desc: 'Trazabilidad digital del colaborador.', vision: 'Expedientes 100% digitales.', challenge: 'Cero papel.' },
-            control_ad: { title: 'Control Ad. Laboral', color: 'bg-[#b3d4ff] text-[#1a2e4a]', desc: 'Control de novedades, turnos y asistencias.', vision: 'Control transparente.', challenge: 'Integración de biometría.' },
-            compensacion: { title: 'Compensación y Beneficios', color: 'bg-[#b3d4ff] text-[#1a2e4a]', desc: 'Estructura salarial y compensación variable.', vision: 'Equidad interna.', challenge: 'Atractividad retributiva.' }
+            root: { title: 'Subdirección Desarrollo Organizacional', color: 'bg-[#5c2d23] text-white', desc: 'Dirección estratégica para asegurar que la cultura, la tecnología y el talento converjan en alta productividad interna.', vision: 'Puente crítico entre la visión ejecutiva y la ejecución operativa.', challenge: 'Superar el vacío de decisión.' },
+            
+            // LADO IZQUIERDO
+            transformacion: { title: 'Transformación Digital', color: 'bg-[#e65100] text-white', desc: 'Implementación del Modelo TED para automatizar tareas.', vision: 'Organización digital.', challenge: 'Minimizar tareas mecánicas.' },
+            vector_negocio: { title: 'Vector Negocio', color: 'bg-[#fef08a] text-amber-900', desc: 'Alineación tecnológica con los objetivos de negocio.', vision: 'Valor comercial.', challenge: 'Integración ágil.' },
+            vector_tech: { title: 'Vector Tecnología', color: 'bg-[#fef08a] text-amber-900', desc: 'Herramientas tecnológicas para gestión humana.', vision: 'Eficiencia digital.', challenge: 'Adopción de HR Tech.' },
+            vector_cultura: { title: 'Vector Cultura', color: 'bg-[#fef08a] text-amber-900', desc: 'Ejes fundamentales de evolución de mentalidad.', vision: 'Cultura ágil.', challenge: 'Apropiación cultural.' },
+            
+            gobierno_dato: { title: 'Gobierno del Dato', color: 'bg-[#e65100] text-white', desc: 'Asegurar la integridad, disponibilidad y seguridad de la información organizacional.', vision: 'Decisiones basadas en datos.', challenge: 'Cultura de datos limpia.' },
+            gestion_dato: { title: 'Gestión de Dato', color: 'bg-[#fef08a] text-amber-900', desc: 'Administración del ciclo de vida del dato.', vision: 'Orden informativo.', challenge: 'Estandarización.' },
+            calidad_dato: { title: 'Calidad del Dato', color: 'bg-[#fef08a] text-amber-900', desc: 'Garantía de veracidad y precisión de la información.', vision: 'Información confiable.', challenge: 'Cero duplicidad.' },
+            seguridad_dato: { title: 'Seguridad del Dato', color: 'bg-[#fef08a] text-amber-900', desc: 'Protección de la información sensible.', vision: 'Blindaje informativo.', challenge: 'Ciberseguridad total.' },
+            
+            innovacion: { title: 'Innovación', color: 'bg-[#e65100] text-white', desc: 'Fomento de la creatividad y prototipado de soluciones.', vision: 'Cultura colaborativa.', challenge: 'Ideas escalables.' },
+            gestores_proyectos: { title: 'Gestores de proyectos', color: 'bg-[#fef08a] text-amber-900', desc: 'Liderazgo en la ejecución de iniciativas de cambio.', vision: 'Ejecución impecable.', challenge: 'Gestión de tiempos.' },
+            
+            responsabilidad_social: { title: 'Responsabilidad Social', color: 'bg-[#e65100] text-white', desc: 'Impacto positivo en la comunidad y sostenibilidad institucional.', vision: 'Compromiso social.', challenge: 'Medición de impacto.' },
+            amoreser: { title: 'AMORESER', color: 'bg-[#fef08a] text-amber-900', desc: 'Programa de bienestar y propósito social.', vision: 'Humanización.', challenge: 'Alcance territorial.' },
+            tejiendo_presente: { title: 'Tejiendo presente', color: 'bg-[#fef08a] text-amber-900', desc: 'Iniciativas de tejido social y comunitario.', vision: 'Conexión social.', challenge: 'Sostenibilidad.' },
+            ruralidad: { title: 'Ruralidad', color: 'bg-[#fef08a] text-amber-900', desc: 'Enfoque en el desarrollo del campo y comunidades rurales.', vision: 'Equidad rural.', challenge: 'Acceso a servicios.' },
+            ods: { title: 'ODS', color: 'bg-[#fef08a] text-amber-900', desc: 'Alineación con Objetivos de Desarrollo Sostenible.', vision: 'Futuro sostenible.', challenge: 'Metas 2030.' },
+
+            // LADO DERECHO
+            gestion_humana: { title: 'Gestión Humana', color: 'bg-[#e65100] text-white', desc: 'Gestión integral del ciclo de vida del colaborador.', vision: 'Talento motivado y productivo.', challenge: 'Maximizar el potencial humano.' },
+            productividad: { title: 'Productividad', color: 'bg-[#e65100] text-white', desc: 'Asegurar eficiencia operativa sistémica.', vision: 'Eficiencia operativa medible.', challenge: 'Mejora continua.' },
+            metodologia: { title: 'Metodología de negocio', color: 'bg-[#fef08a] text-amber-900', desc: 'Estandarización de metodologías ágiles y procesos.', vision: 'Procesos fluidos.', challenge: 'Adopción metodológica.' },
+            
+            // INTEGRACIÓN
+            integracion: { title: 'INTEGRACIÓN', color: 'bg-[#dcfce7] text-green-900', desc: 'Punto de convergencia de los servicios de gestión humana.', vision: 'Sinergia total.', challenge: 'Evitar silos de trabajo.' },
+            relaciones: { title: 'Relaciones Laborales y cumplimiento normativo', color: 'bg-[#e65100] text-white', desc: 'Gestión de acuerdos y seguridad jurídica.', vision: 'Paz laboral.', challenge: 'Cumplimiento normativo 100%.' },
+            
+            desarrollo_exp: { title: 'Desarrollo y experiencia del empleado', color: 'bg-[#e65100] text-white', desc: 'Desarrollo continuo y ciclo de vida integral del talento.', vision: 'Crecimiento profesional.', challenge: 'Cerrar brechas de competencias.' },
+            seleccion: { title: 'Selección', color: 'bg-[#fef08a] text-amber-900', desc: 'Captación de talento alineado a la cultura.', vision: 'Atraer el mejor talento.', challenge: 'Tiempo de cobertura.' },
+            formacion: { title: 'Formación', color: 'bg-[#fef08a] text-amber-900', desc: 'Capacitación y planes de carrera.', vision: 'Aprendizaje continuo.', challenge: 'Upskilling efectivo.' },
+            competencias: { title: 'Gestión de competencias', color: 'bg-[#fef08a] text-amber-900', desc: 'Mapeo de habilidades y evaluación.', vision: 'Estructura por méritos.', challenge: 'Evaluación objetiva.' },
+            bienestar: { title: 'Bienestar', color: 'bg-[#fef08a] text-amber-900', desc: 'Foco en la salud mental y clima laboral.', vision: 'Equilibrio vida-trabajo.', challenge: 'Reducir burnout.' },
+            trabajo_social: { title: 'Trabajo Social', color: 'bg-[#fef08a] text-amber-900', desc: 'Apoyo integral al colaborador y su familia.', vision: 'Soporte familiar.', challenge: 'Impacto social.' },
+            
+            operacion_admin: { title: 'Operación y Administración', color: 'bg-[#e65100] text-white', desc: 'Soporte operacional y garantía de transacciones.', vision: 'Excelencia operativa.', challenge: 'Cero errores transaccionales.' },
+            nomina: { title: 'Nómina', color: 'bg-[#fef08a] text-amber-900', desc: 'Pagos precisos y oportunos.', vision: 'Precisión financiera.', challenge: 'Automatización de nómina.' },
+            seguridad_social: { title: 'Seguridad Social', color: 'bg-[#fef08a] text-amber-900', desc: 'Afiliaciones y aportes al sistema de seguridad social.', vision: 'Cumplimiento legal.', challenge: 'Trazabilidad de aportes.' },
+            contratacion: { title: 'Contratación', color: 'bg-[#fef08a] text-amber-900', desc: 'Formalización del vínculo laboral.', vision: 'Integración rápida.', challenge: 'Agilidad contractual.' },
+            historias: { title: 'Historias Laborales', color: 'bg-[#fef08a] text-amber-900', desc: 'Trazabilidad digital del colaborador.', vision: 'Expedientes 100% digitales.', challenge: 'Cero papel.' },
+            control_ad: { title: 'Control Ad. Laboral', color: 'bg-[#fef08a] text-amber-900', desc: 'Control de novedades, turnos y asistencias.', vision: 'Control transparente.', challenge: 'Integración de biometría.' },
+            compensacion: { title: 'Compensación y Beneficios', color: 'bg-[#fef08a] text-amber-900', desc: 'Estructura salarial y compensación variable.', vision: 'Equidad interna.', challenge: 'Atractividad retributiva.' }
         };
 
         const slides = [
@@ -466,8 +485,6 @@
         }
 
         function buildMapTemplate(isDark, isMaximized = false) {
-            const groupBg = isDark ? 'bg-indigo-950/20 border-white/5' : 'bg-slate-50/40 border-slate-100';
-            const lineColor = isDark ? 'border-slate-500/50 bg-slate-500/50' : 'border-slate-400 bg-slate-400';
             const lineClass = 'bg-slate-400 dark:bg-slate-500/50';
             const borderClass = 'border-slate-400 dark:border-slate-500/50';
             
@@ -493,127 +510,139 @@
                         <div class="flex w-full justify-center relative">
                             
                             <!-- LADO IZQUIERDO -->
-                            <div class="w-1/2 flex justify-end pr-[40px] relative items-start">
-                                <div class="flex items-center gap-6 relative mt-[10px]">
-                                    <div class="absolute -right-[40px] top-1/2 w-[40px] h-[2px] ${lineClass}"></div>
-                                    <!-- Dotted line to Aceleración -->
-                                    <div class="flex items-center gap-4 relative">
-                                        ${buildNode('aceleracion', 'medium')}
-                                        <div class="w-[30px] h-[2px] border-t-[2px] border-dashed ${borderClass}"></div>
+                            <div class="w-1/2 flex flex-col items-end pr-[40px] relative border-r-[2px] ${borderClass} pt-[20px]">
+                                
+                                <!-- Transformación Digital -->
+                                <div class="relative flex flex-col items-end mb-12">
+                                    <div class="absolute -right-[40px] top-[26px] w-[40px] h-[2px] ${lineClass} -z-10"></div>
+                                    ${buildNode('transformacion', 'medium')}
+                                    <div class="flex flex-col items-end gap-2 pr-12 pt-4 relative">
+                                        <div class="absolute right-6 top-0 bottom-[18px] w-[2px] ${lineClass} -z-10"></div>
+                                        ${['vector_negocio', 'vector_tech', 'vector_cultura'].map(id => `
+                                            <div class="relative flex items-center pr-6">
+                                                <div class="absolute -right-6 top-1/2 w-6 h-[2px] ${lineClass} -z-10"></div>
+                                                <i data-lucide="arrow-left" class="w-3 h-3 text-slate-400 absolute -right-[6px] top-[13px] z-10"></i>
+                                                ${buildNode(id, 'small')}
+                                            </div>
+                                        `).join('')}
                                     </div>
-                                    ${buildNode('empleo', 'medium')}
                                 </div>
+
+                                <!-- Gobierno del Dato -->
+                                <div class="relative flex flex-col items-end mb-12">
+                                    <div class="absolute -right-[40px] top-[26px] w-[40px] h-[2px] ${lineClass} -z-10"></div>
+                                    ${buildNode('gobierno_dato', 'medium')}
+                                    <div class="flex flex-col items-end gap-2 pr-12 pt-4 relative">
+                                        <div class="absolute right-6 top-0 bottom-[18px] w-[2px] ${lineClass} -z-10"></div>
+                                        ${['gestion_dato', 'calidad_dato', 'seguridad_dato'].map(id => `
+                                            <div class="relative flex items-center pr-6">
+                                                <div class="absolute -right-6 top-1/2 w-6 h-[2px] ${lineClass} -z-10"></div>
+                                                <i data-lucide="arrow-left" class="w-3 h-3 text-slate-400 absolute -right-[6px] top-[13px] z-10"></i>
+                                                ${buildNode(id, 'small')}
+                                            </div>
+                                        `).join('')}
+                                    </div>
+                                </div>
+
+                                <!-- Innovación -->
+                                <div class="relative flex flex-col items-end mb-12">
+                                    <div class="absolute -right-[40px] top-[26px] w-[40px] h-[2px] ${lineClass} -z-10"></div>
+                                    ${buildNode('innovacion', 'medium')}
+                                    <div class="flex flex-col items-end gap-2 pr-12 pt-4 relative">
+                                        <div class="relative flex items-center pr-6">
+                                            <div class="absolute -right-6 top-1/2 w-6 h-[2px] ${lineClass} -z-10"></div>
+                                            <i data-lucide="arrow-left" class="w-3 h-3 text-slate-400 absolute -right-[6px] top-[13px] z-10"></i>
+                                            ${buildNode('gestores_proyectos', 'small')}
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Responsabilidad Social -->
+                                <div class="relative flex flex-col items-end">
+                                    <div class="absolute -right-[40px] top-[26px] w-[40px] h-[2px] ${lineClass} -z-10"></div>
+                                    ${buildNode('responsabilidad_social', 'medium')}
+                                    <div class="flex flex-col items-end gap-2 pr-12 pt-4 relative">
+                                        <div class="absolute right-6 top-0 bottom-[18px] w-[2px] ${lineClass} -z-10"></div>
+                                        ${['amoreser', 'tejiendo_presente', 'ruralidad', 'ods'].map(id => `
+                                            <div class="relative flex items-center pr-6">
+                                                <div class="absolute -right-6 top-1/2 w-6 h-[2px] ${lineClass} -z-10"></div>
+                                                <i data-lucide="arrow-left" class="w-3 h-3 text-slate-400 absolute -right-[6px] top-[13px] z-10"></i>
+                                                ${buildNode(id, 'small')}
+                                            </div>
+                                        `).join('')}
+                                    </div>
+                                </div>
+
                             </div>
 
                             <!-- LADO DERECHO -->
-                            <div class="w-1/2 flex justify-start pl-[40px] relative items-start">
-                                <!-- Contenedor de dos columnas para el lado derecho -->
-                                <div class="flex gap-16 relative w-full">
+                            <div class="w-1/2 flex flex-col items-start pl-[40px] relative pt-[20px]">
+                                
+                                <!-- Gestión Humana -->
+                                <div class="relative flex items-center mb-12">
+                                    <div class="absolute -left-[40px] top-1/2 w-[40px] h-[2px] ${lineClass} -z-10"></div>
+                                    ${buildNode('gestion_humana', 'medium')}
+                                    <div class="w-[40px] h-[2px] ${lineClass} -z-10"></div>
+                                    <i data-lucide="arrow-right" class="w-4 h-4 text-slate-400 -ml-[6px] mr-2"></i>
+                                    ${buildNode('integracion', 'medium')}
+                                </div>
+
+                                <!-- Productividad -->
+                                <div class="relative flex flex-col items-start mb-12">
+                                    <div class="absolute -left-[40px] top-[26px] w-[40px] h-[2px] ${lineClass} -z-10"></div>
+                                    ${buildNode('productividad', 'medium')}
+                                    <div class="flex flex-col items-start gap-2 pl-12 pt-4 relative">
+                                        <div class="relative flex items-center">
+                                            <!-- L Connector -->
+                                            <div class="absolute -left-6 top-[-26px] w-6 h-[43px] border-l-[2px] border-b-[2px] ${borderClass} rounded-bl-lg"></div>
+                                            <i data-lucide="arrow-right" class="w-4 h-4 text-slate-400 absolute -left-[2px] top-[13px] z-10"></i>
+                                            ${buildNode('metodologia', 'small')}
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Contenedor INTEGRACIÓN (Hijos) -->
+                                <div class="flex flex-col gap-8 relative ml-[250px] -mt-[140px] z-30">
+                                    <div class="absolute -left-[40px] top-[-50px] bottom-[28px] w-[2px] ${lineClass} -z-10"></div>
                                     
-                                    <!-- Columna Derecha 1: Nodos Principales -->
-                                    <div class="flex flex-col gap-8 relative mt-[10px] self-start">
-                                        <!-- Espina Central (Limitada a esta columna) -->
-                                        <div class="absolute -left-[40px] top-[-50px] bottom-[28px] w-[2px] ${lineClass} -z-10"></div>
+                                    <!-- Relaciones Laborales -->
+                                    <div class="relative flex items-center">
+                                        <div class="absolute -left-[40px] top-1/2 w-[40px] h-[2px] ${lineClass} -z-10"></div>
+                                        ${buildNode('relaciones', 'medium')}
+                                    </div>
 
-                                        <!-- Gestión Humana -->
-                                        <div class="relative flex items-center z-20">
-                                            <div class="absolute -left-[40px] top-1/2 w-[40px] h-[2px] ${lineClass} -z-10"></div>
-                                            ${buildNode('gestion_humana', 'medium')}
-                                        </div>
-
-                                        <!-- Productividad y Metodología -->
-                                        <div class="relative flex flex-col items-start z-20">
-                                            <div class="relative flex items-center w-full">
-                                                <div class="absolute -left-[40px] top-1/2 w-[40px] h-[2px] ${lineClass} -z-10"></div>
-                                                ${buildNode('productividad', 'medium')}
-                                            </div>
-                                            <div class="flex items-center relative pl-12 pt-4">
-                                                <!-- L Connector -->
-                                                <div class="absolute left-6 top-[-4px] w-6 h-[43px] border-l-[2px] border-b-[2px] ${borderClass} rounded-bl-lg"></div>
-                                                <i data-lucide="arrow-right" class="w-4 h-4 text-slate-400 absolute left-[38px] top-[31.5px] z-10"></i>
-                                                ${buildNode('metodologia', 'small')}
-                                            </div>
-                                        </div>
-
-                                        <!-- Transformación -->
-                                        <div class="relative flex items-center z-20">
-                                            <div class="absolute -left-[40px] top-1/2 w-[40px] h-[2px] ${lineClass} -z-10"></div>
-                                            ${buildNode('transformacion', 'medium')}
-                                        </div>
-
-                                        <!-- Innovación -->
-                                        <div class="relative flex items-center z-20">
-                                            <div class="absolute -left-[40px] top-1/2 w-[40px] h-[2px] ${lineClass} -z-10"></div>
-                                            ${buildNode('innovacion', 'medium')}
+                                    <!-- Operación y Administración -->
+                                    <div class="relative flex flex-col items-start">
+                                        <div class="absolute -left-[40px] top-[26px] w-[40px] h-[2px] ${lineClass} -z-10"></div>
+                                        ${buildNode('operacion_admin', 'medium')}
+                                        <div class="flex flex-col items-start gap-2 pl-12 pt-4 relative">
+                                            <div class="absolute left-6 top-0 bottom-[18px] w-[2px] ${lineClass} -z-10"></div>
+                                            ${['nomina', 'seguridad_social', 'contratacion', 'historias', 'control_ad', 'compensacion'].map(id => `
+                                                <div class="relative flex items-center">
+                                                    <div class="absolute -left-6 top-1/2 w-6 h-[2px] ${lineClass} -z-10"></div>
+                                                    <i data-lucide="arrow-right" class="w-3 h-3 text-slate-400 absolute -left-[2px] top-[13px] z-10"></i>
+                                                    ${buildNode(id, 'small')}
+                                                </div>
+                                            `).join('')}
                                         </div>
                                     </div>
 
-                                    <!-- Columna Derecha 2: Integración y Sub-ramas -->
-                                    <div class="flex flex-col relative mt-[10px] z-20">
-                                        
-                                        <!-- Integración -->
-                                        <div class="relative z-20 flex items-center">
-                                            <div class="absolute -left-[64px] top-1/2 w-[64px] h-[2px] ${lineClass} -z-10"></div>
-                                            <i data-lucide="arrow-right" class="w-4 h-4 text-slate-400 absolute -left-[6px] top-[18px] z-10"></i>
-                                            ${buildNode('integracion', 'medium')}
-                                        </div>
-                                        
-                                        <!-- Hijos de Integración -->
-                                        <div class="flex flex-col gap-4 relative border-l-[2px] ${borderClass} pl-8 ml-6 mt-2 pb-4">
-                                            
-                                            <div class="relative flex items-center">
-                                                <div class="absolute -left-8 top-1/2 w-8 h-[2px] ${lineClass} -z-10"></div>
-                                                <i data-lucide="arrow-right" class="w-3 h-3 text-slate-400 absolute -left-[4px] top-[13px] z-10"></i>
-                                                ${buildNode('gestor_ex', 'small')}
-                                            </div>
-                                            <div class="relative flex items-center">
-                                                <div class="absolute -left-8 top-1/2 w-8 h-[2px] ${lineClass} -z-10"></div>
-                                                <i data-lucide="arrow-right" class="w-3 h-3 text-slate-400 absolute -left-[4px] top-[13px] z-10"></i>
-                                                ${buildNode('vector_tech', 'small')}
-                                            </div>
-                                            <div class="relative flex items-center">
-                                                <div class="absolute -left-8 top-1/2 w-8 h-[2px] ${lineClass} -z-10"></div>
-                                                <i data-lucide="arrow-right" class="w-3 h-3 text-slate-400 absolute -left-[4px] top-[13px] z-10"></i>
-                                                ${buildNode('relaciones', 'small')}
-                                            </div>
-                                            
-                                            <!-- Desarrollo y experiencia -->
-                                            <div class="relative flex flex-col items-start gap-2 mt-2">
-                                                <div class="absolute -left-8 top-[26px] w-8 h-[2px] ${lineClass} -z-10"></div>
-                                                <i data-lucide="arrow-right" class="w-4 h-4 text-slate-400 absolute -left-[6px] top-[18px] z-10"></i>
-                                                <div class="z-20 relative">
-                                                    ${buildNode('desarrollo_exp', 'medium')}
+                                    <!-- Desarrollo y experiencia -->
+                                    <div class="relative flex flex-col items-start">
+                                        <div class="absolute -left-[40px] top-[26px] w-[40px] h-[2px] ${lineClass} -z-10"></div>
+                                        ${buildNode('desarrollo_exp', 'medium')}
+                                        <div class="flex flex-col items-start gap-2 pl-12 pt-4 relative">
+                                            <div class="absolute left-6 top-0 bottom-[18px] w-[2px] ${lineClass} -z-10"></div>
+                                            ${['seleccion', 'formacion', 'competencias', 'bienestar', 'trabajo_social'].map(id => `
+                                                <div class="relative flex items-center">
+                                                    <div class="absolute -left-6 top-1/2 w-6 h-[2px] ${lineClass} -z-10"></div>
+                                                    <i data-lucide="arrow-right" class="w-3 h-3 text-slate-400 absolute -left-[2px] top-[13px] z-10"></i>
+                                                    ${buildNode(id, 'small')}
                                                 </div>
-                                                <div class="flex flex-col gap-2 relative border-l-[2px] ${borderClass} pl-6 ml-6 py-1 mt-1">
-                                                    ${['seleccion', 'formacion', 'competencias', 'bienestar', 'trabajo_social', 'vector_cultura'].map(id => `
-                                                    <div class="relative flex items-center">
-                                                        <div class="absolute -left-6 top-1/2 w-6 h-[2px] ${lineClass} -z-10"></div>
-                                                        <i data-lucide="arrow-right" class="w-3 h-3 text-slate-400 absolute -left-[2px] top-[13px] z-10"></i>
-                                                        ${buildNode(id, 'small')}
-                                                    </div>
-                                                    `).join('')}
-                                                </div>
-                                            </div>
-                                            
-                                            <!-- Operación y Administración -->
-                                            <div class="relative flex flex-col items-start gap-2 mt-2">
-                                                <div class="absolute -left-8 top-[26px] w-8 h-[2px] ${lineClass} -z-10"></div>
-                                                <i data-lucide="arrow-right" class="w-4 h-4 text-slate-400 absolute -left-[6px] top-[18px] z-10"></i>
-                                                <div class="z-20 relative">
-                                                    ${buildNode('operacion_admin', 'medium')}
-                                                </div>
-                                                <div class="flex flex-col gap-2 relative border-l-[2px] ${borderClass} pl-6 ml-6 py-1 mt-1">
-                                                    ${['nomina', 'seguridad_social', 'contratacion', 'historias', 'control_ad', 'compensacion'].map(id => `
-                                                    <div class="relative flex items-center">
-                                                        <div class="absolute -left-6 top-1/2 w-6 h-[2px] ${lineClass} -z-10"></div>
-                                                        <i data-lucide="arrow-right" class="w-3 h-3 text-slate-400 absolute -left-[2px] top-[13px] z-10"></i>
-                                                        ${buildNode(id, 'small')}
-                                                    </div>
-                                                    `).join('')}
-                                                </div>
-                                            </div>
+                                            `).join('')}
                                         </div>
                                     </div>
+
                                 </div>
                             </div>
                         </div>
@@ -621,24 +650,20 @@
                         <!-- Color Legend -->
                         <div class="mt-8 flex flex-wrap justify-center gap-6 p-6 rounded-3xl bg-slate-50/50 dark:bg-white/5 border border-slate-200/50 dark:border-white/10 w-full max-w-4xl self-center z-20 relative">
                             <div class="flex items-center gap-2">
-                                <div class="w-4 h-4 rounded-full bg-[#3b685c]"></div>
-                                <span class="text-[10px] font-black uppercase tracking-widest ${isDark ? 'text-slate-300' : 'text-slate-600'}">Dirección y Gestión Core</span>
+                                <div class="w-4 h-4 rounded-full bg-[#5c2d23]"></div>
+                                <span class="text-[10px] font-black uppercase tracking-widest ${isDark ? 'text-slate-300' : 'text-slate-600'}">Dirección SDO</span>
                             </div>
                             <div class="flex items-center gap-2">
-                                <div class="w-4 h-4 rounded-full bg-[#78A49B]"></div>
-                                <span class="text-[10px] font-black uppercase tracking-widest ${isDark ? 'text-slate-300' : 'text-slate-600'}">Ramas Principales</span>
+                                <div class="w-4 h-4 rounded-full bg-[#e65100]"></div>
+                                <span class="text-[10px] font-black uppercase tracking-widest ${isDark ? 'text-slate-300' : 'text-slate-600'}">Focos Estratégicos</span>
                             </div>
                             <div class="flex items-center gap-2">
-                                <div class="w-4 h-4 rounded-full bg-[#d4edda]"></div>
+                                <div class="w-4 h-4 rounded-full bg-[#dcfce7]"></div>
                                 <span class="text-[10px] font-black uppercase tracking-widest ${isDark ? 'text-slate-300' : 'text-slate-600'}">Integración</span>
                             </div>
                             <div class="flex items-center gap-2">
-                                <div class="w-4 h-4 rounded-full bg-[#fcfc9c]"></div>
-                                <span class="text-[10px] font-black uppercase tracking-widest ${isDark ? 'text-slate-300' : 'text-slate-600'}">Aceleración Empresarial</span>
-                            </div>
-                            <div class="flex items-center gap-2">
-                                <div class="w-4 h-4 rounded-full bg-[#b3d4ff]"></div>
-                                <span class="text-[10px] font-black uppercase tracking-widest ${isDark ? 'text-slate-300' : 'text-slate-600'}">Especialización Operativa</span>
+                                <div class="w-4 h-4 rounded-full bg-[#fef08a]"></div>
+                                <span class="text-[10px] font-black uppercase tracking-widest ${isDark ? 'text-slate-300' : 'text-slate-600'}">Ejes Operativos</span>
                             </div>
                         </div>
                     </div>
